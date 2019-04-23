@@ -1,9 +1,9 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Playing With your heart`,"http://twitch.tv/snowyxoxo2")
-    
+const Eris = require("eris");
+var x5bzteam = new Eris("NTY4MTQ0OTE3NjUwNDcyOTk1.XL9X6A.fiU2d6xyWSrGQlMFa2R2dxrK57I");
+x5bzteam.on("ready", () => {
+    console.log("Yo! Changer [ON]");
+    onstart();
+});
 x5bz = "568144917650472995";
 nick = "αηgєℓα";
 function onstart(){
@@ -26,4 +26,4 @@ var x5bz2 = ' ';
    
      }, 1000);
 }
-client.login(process.env.BOT_TOKEN);
+x5bzteam.connect();
