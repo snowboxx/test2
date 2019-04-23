@@ -4,7 +4,7 @@ x5bzteam.on("ready", () => {
     console.log("Yo! Changer [ON]");
     onstart();
 });
-x5bz = "568144917650472995";
+x5bz = "568564691241009177";
 nick = "αηgєℓα";
 function onstart(){
     var v1 = nick.split('');
