@@ -1,17 +1,29 @@
-const Discord = require('discord.js');
-const client = new Discord.Client();
-const ms = require("ms");
-
-var ourserver = ㄨ    ˣᵒ  family house  ˣᵒ    じ ; 
-var ms = 4500; // سرعة التعديل على اسم الروم
-client.on('guildMemberAdd', async member => {
-    setInterval(function (){ 
-   client.channels.find('id', '568566239451021312').setName("Welcome To");
-   client.channels.find('id', '568566239451021312').setName(${ourserver});
-   client.channels.find('id', '568566239451021312').setName(${member.user.tag});
-
-    }, ms); 
+const Eris = require("eris");
+var x5bzteam = new Eris("MzY5OTUxODk4MjY4MzM2MTMw.DZkjww.Pt2vViHxMJhTc8SCX1-QKd9uhMQ");
+x5bzteam.on("ready", () => {
+    console.log("Yo! Changer [ON]");
+    onstart();
 });
-
-
-client.login(process.env.BOT_TOKEN);
+x5bz = "466310865898176522";
+nick = "SnowyXOXO";
+function onstart(){
+    var v1 = nick.split('');
+    var counter;
+    var i=0;
+var x5bz2 = ' ';
+  var x5bz3 =   setInterval(function(){
+     
+     if (i == v1.length){
+     clearInterval(x5bz3);
+     onstart()
+      return;
+     }
+     var v2 = v1[i];
+    x5bz2 += v2;
+    x5bzteam.editNickname(x5bz, x5bz2);
+ 
+        i++;
+   
+     }, 1000);
+}
+x5bzteam.connect();
