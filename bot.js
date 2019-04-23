@@ -8,7 +8,7 @@ const ffmpeg = require('ffmpeg');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Playing With your heart`,"http://twitch.tv/S-F%22")
+client.user.setGame(`Playing with your heart...`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -33,14 +33,14 @@ client.user.setGame(`Playing With your heart`,"http://twitch.tv/S-F%22")
 });
 
 
-var ourserver = ㄨ    ˣᵒ  family house  ˣᵒ    じ ; 
+var ourserver = `ㄨ    ˣᵒ  family house  ˣᵒ    じ` ; 
 var ms = 4500; // سرعة التعديل على اسم الروم
 client.on('guildMemberAdd', async member => {
     setInterval(function (){ 
    client.channels.find('id', '568566677349072908').setName("Welcome To");
-   client.channels.find('id', '568566677349072908').setName(${ourserver});
-   client.channels.find('id', '568566677349072908').setName(${member.user.tag});
-
+   client.channels.find('id', '568566677349072908').setName(`${ourserver}`);    
+   client.channels.find('id', '568566677349072908').setName(`${member.user.tag}`);
+   
     }, ms); 
 });
 
