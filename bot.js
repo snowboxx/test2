@@ -1,29 +1,60 @@
-const Eris = require("eris");
-var x5bzteam = new Eris("NTY4MTQ0OTE3NjUwNDcyOTk1.XL9X6A.fiU2d6xyWSrGQlMFa2R2dxrK57I");
-x5bzteam.on("ready", () => {
-    console.log("Yo! Changer [ON]");
-    onstart();
-});
-x5bz = "568564691241009177";
-nick = "αηgєℓα";
-function onstart(){
-    var v1 = nick.split('');
-    var counter;
-    var i=0;
-var x5bz2 = ' ';
-  var x5bz3 =   setInterval(function(){
-     
-     if (i == v1.length){
-     clearInterval(x5bz3);
-     onstart()
-      return;
-     }
-     var v2 = v1[i];
-    x5bz2 += v2;
-    x5bzteam.editNickname(x5bz, x5bz2);
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const music = require('discord.js-music-v11');
+const ytdl = require('ytdl-core');
+const ffmpeg = require('ffmpeg');
  
-        i++;
-   
-     }, 1000);
+
+
+client.on('ready', () => {
+  console.log(Logged in as ${client.user.tag}!);
+client.user.setGame(SECURITED...,"http://twitch.tv/S-F%22)
+  console.log('')
+  console.log('')
+  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
+  console.log([Start] ${new Date()});
+  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════════════════════════════]╗');
+  console.log(Logged in as * [ " ${client.user.username} " ]);
+  console.log('')
+  console.log('Informations :')
+  console.log('')
+  console.log(servers! [ " ${client.guilds.size} " ]);
+  console.log(Users! [ " ${client.users.size} " ]);
+  console.log(channels! [ " ${client.channels.size} " ]);
+  console.log('╚[════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════]╗')
+  console.log(' Bot Is Online')
+  console.log('╚[════════════]╝')
+  console.log('')
+  console.log('')
+});
+
+
+var ourserver = ㄨ    ˣᵒ  family house  ˣᵒ    じ ; 
+var ms = 4500; // سرعة التعديل على اسم الروم
+client.on('guildMemberAdd', async member => {
+    setInterval(function (){ 
+   client.channels.find('id', '568566677349072908').setName("Welcome To");
+   client.channels.find('id', '568566677349072908').setName(${ourserver});
+   client.channels.find('id', '568566677349072908').setName(${member.user.tag});
+
+    }, ms); 
+});
+
+client.on('message', msg => {
+if (msg.content == '$join') {
+if (msg.member.voiceChannel) {
+if (msg.member.voiceChannel.joinable) {
+msg.member.voiceChannel.join().then(msg.react('white_check_mark'));
 }
-x5bzteam.connect();
+}
+}
+})
+client.on('ready', () => { //code bot not leave room voice //Bot Is Online
+client.channels.get("568566677349072908").join(); 
+});
+
+client.login(process.env.BOT_TOKEN);
