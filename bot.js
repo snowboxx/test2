@@ -1,11 +1,11 @@
-const Eris = require("eris");
-var x5bzteam = new Eris("MzY5OTUxODk4MjY4MzM2MTMw.DZkjww.Pt2vViHxMJhTc8SCX1-QKd9uhMQ");
-x5bzteam.on("ready", () => {
-    console.log("Yo! Changer [ON]");
-    onstart();
-});
-x5bz = "466310865898176522";
-nick = "SnowyXOXO";
+const Discord = require('discord.js');
+const client = new Discord.Client();
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`Playing With your heart`,"http://twitch.tv/snowyxoxo2")
+    
+x5bz = "568144917650472995";
+nick = "αηgєℓα";
 function onstart(){
     var v1 = nick.split('');
     var counter;
@@ -26,4 +26,4 @@ var x5bz2 = ' ';
    
      }, 1000);
 }
-x5bzteam.connect();
+client.login(process.env.BOT_TOKEN);
