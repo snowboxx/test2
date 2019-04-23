@@ -8,7 +8,7 @@ const ffmpeg = require('ffmpeg');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(Playing With your heart,"http://twitch.tv/S-F%22)
+client.user.setGame(`Playing With your heart`,"http://twitch.tv/S-F%22")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
